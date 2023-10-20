@@ -8,11 +8,8 @@ import getRoomType from './utils/getRoomType.utils';
 
 const App = () => {
 	const [coordinate, setCoordinate] = useState({y: 2, x: 2});
-	console.log(coordinate);
 	const [roomtype, setRoomType] = useState(getRoomType(coordinate));
 	const [navigation, setNavigation] = useState(getPosition(coordinate));
-
-	console.log(coordinate);
 
 	const goto = (coor, type) => {
 		if (type === "up") coor.y -= 1;

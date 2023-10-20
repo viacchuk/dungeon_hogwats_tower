@@ -1,9 +1,22 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({roomtype, coordinate}) => {
+	const style = {
+		textAlign: 'center',
+    	fontSize: '30px',
+	}
+
+	let text = "";
+
+	text += `[${coordinate.x}:${coordinate.y}`
+	
+	if (roomtype.zone === "dedal") text += " Зал Дедала] ";
+
+	if (roomtype.type === "passage") text += "Коридор"
+
 	return (
-		<div className = 'Header'>
-            Header
+		<div style = {style} className = 'Header'>
+			{text}
 		</div>
 	)
 }

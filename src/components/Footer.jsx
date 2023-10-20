@@ -1,9 +1,17 @@
 import React from 'react';
+import getInfo from '../utils/getInfo.utils';
 
-const Footer = () => {
+const Footer = ({coordinate}) => {
+	const style = {
+		textAlign: 'center',
+    	fontSize: '20px',
+	}
+
+	const text = getInfo(coordinate);
+
 	return (
-		<div className = 'Footer'>
-            Footer
+		<div style = {style} className = 'Footer'>
+			{text}
 		</div>
 	)
 }

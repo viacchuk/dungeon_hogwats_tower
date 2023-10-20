@@ -1,29 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-.App {
-    display: grid;
-
-    grid-template-areas:
-    "header"
-    "body"
-    "footer";
-
-    grid-template-rows: 4fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 0px;
-}
-
-.Header {
-    grid-area: header;
-}
-
-.Body {
-    grid-area: body;
-}
-
-.Footer {
-    grid-area: footer;
+    background-color: #0b0400;
+    font-family: "Comic Sans MS";
+    color: white;
 }

@@ -7,7 +7,7 @@ import getPosition from './utils/getPosition.utils';
 import getRoomType from './utils/getRoomType.utils';
 
 const App = () => {
-	const [coordinate, setCoordinate] = useState({y: 2, x: 2});
+	const [coordinate, setCoordinate] = useState({y: 67, x: 47});
 	const [roomtype, setRoomType] = useState(getRoomType(coordinate));
 	const [navigation, setNavigation] = useState(getPosition(coordinate));
 

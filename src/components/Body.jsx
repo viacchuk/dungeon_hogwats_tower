@@ -26,6 +26,8 @@ const Body = ({roomtype, coordinate, navigation, goto}) => {
 	}
 
 	let imgURL = '';
+	if (roomtype.type === "center") imgURL = 'img/center.png'
+	if (roomtype.type === "room") imgURL = 'img/room.png'
 	if (roomtype.type === "passage") imgURL = 'img/passage.png'
 
 	return (

@@ -13,6 +13,7 @@ const Header = ({roomtype, coordinate}) => {
 	if (roomtype.zone === "dedal") text += " Зал Дедала] ";
 
 	if (roomtype.type === "passage") text += "Коридор"
+	if (roomtype.type === "room") text += "Комната"
 
 	return (
 		<div style = {style} className = 'Header'>

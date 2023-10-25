@@ -17,6 +17,11 @@ const App = () => {
 		if (type === "left") coor.x -= 1;
 		if (type === "right") coor.x += 1;
 
+		if (type === "to") {
+			coor.x = 35;
+			coor.y = 32;
+		}
+
 		setCoordinate(coor);
 		setRoomType(getRoomType(coor));
 		setNavigation(getPosition(coor));
@@ -26,7 +31,7 @@ const App = () => {
 		<div className = 'App'>
 			<Header roomtype = {roomtype} coordinate = {coordinate}/>
 			<Body roomtype = {roomtype} coordinate = {coordinate} navigation = {navigation} goto = {goto}/>
-			<Footer coordinate = {coordinate}/>
+			<Footer coordinate = {coordinate} goto = {goto}/>
 		</div>
 	)
 }
